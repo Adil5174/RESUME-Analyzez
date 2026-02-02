@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Resume Screening - Futuristic</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1> Resume Screening</h1>
+
+  <textarea id="jobDesc" placeholder="Enter Job Description..."></textarea>
+
+  <input type="file" id="resumes" multiple accept=".pdf">
+
+  <button type="button" onclick="submitData()">Analyze</button>
+
+  <div id="loader" class="loader" style="display:none;"></div>
+
+  <div id="results"></div>
+
+  <a id="downloadPDF" href="screening_report.pdf" download style="display:none;" class="download-btn">Download PDF Report</a>
+</div>
+<footer>
+  <p>© 2026  Resume Screening. Built by <span class="authors">Ahtisham Shahid & Adil Hussain</span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

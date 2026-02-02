@@ -1,0 +1,179 @@
+/* Body and General */
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #0e0e14;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #1b1b27;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #00f0ff, #ff00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  height: 150px;
+  background: #12121b;
+  color: #e0e0e0;
+  border: 1px solid #00f0ff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-size: 1em;
+  outline: none;
+  transition: 0.3s;
+}
+textarea:focus {
+  border-color: #ff00e0;
+  box-shadow: 0 0 10px rgba(255,0,224,0.5);
+}
+
+/* File Input */
+input[type=file] {
+  margin-bottom: 15px;
+  display: block;
+  color: #e0e0e0;
+}
+
+/* Buttons */
+button {
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #00f0ff, #ff00e0);
+  color: #0e0e14;
+  font-weight: 600;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: linear-gradient(90deg, #ff00e0, #00f0ff);
+  color: #fff;
+}
+
+/* Loader */
+.loader {
+  border: 6px solid #1b1b27;
+  border-top: 6px solid #00f0ff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  animation: spin 1s linear infinite;
+  margin: 25px auto;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Candidate Card */
+.candidate-card {
+  background: #12121b;
+  padding: 20px;
+  border-left: 5px solid #00f0ff;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.1);
+  transition: 0.3s;
+}
+.candidate-card:hover {
+  border-left-color: #ff00e0;
+  box-shadow: 0 0 25px rgba(255,0,224,0.3);
+}
+
+/* Card Body */
+.card-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Skill badges */
+.skill-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px 4px 4px 0;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 600;
+  animation: float 2s infinite alternate;
+  cursor: default;
+}
+
+.matching {
+  background: #00f0ff;
+  color: #0e0e14;
+  box-shadow: 0 0 8px #00f0ff, 0 0 16px #00f0ff50;
+}
+
+.missing {
+  background: #ff00e0;
+  color: #0e0e14;
+  box-shadow: 0 0 8px #ff00e0, 0 0 16px #ff00e050;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-5px); }
+}
+
+/* Chart canvas */
+.candidate-card canvas {
+  max-width: 200px;
+  max-height: 150px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #ff00e0, #00f0ff);
+  color: #0e0e14;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.download-btn:hover {
+  background: linear-gradient(90deg, #00f0ff, #ff00e0);
+  color: #fff;
+}
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px 0;
+  background: #12121b;
+  border-top: 1px solid #00f0ff;
+  color: #888;
+  font-size: 0.9em;
+}
+
+footer .authors {
+  color: #00f0ff;
+  font-weight: 600;
+  background: linear-gradient(90deg, #00f0ff, #ff00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
